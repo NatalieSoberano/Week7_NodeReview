@@ -5,7 +5,7 @@ const myVM = (() => {
     let userButton = document.querySelectorAll('.u-link'), 
         lightbox = document.querySelector('.lightbox');
     
-    function renderSocialMedia(socialMedia) {
+    function renderdescription(socialMedia) {
         return `<ul class="u-social">
             ${socialMedia.map(item => `<li>${item}</li>}`).join('')}
         </ul>`
@@ -17,8 +17,7 @@ const myVM = (() => {
 
         let bioContent = `
             <p>${person.bio}</p>
-            <h4>Social Media:/<h4>
-            ${renderSocialMedia(person.social)}
+            ${renderdescription(person.social)}
         `;
 
         console.log(bioContent);

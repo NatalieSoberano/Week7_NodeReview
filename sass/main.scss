@@ -4,17 +4,23 @@
 @import 'modules/_lightbox';
 
 body {
-    color: $main-color;
-    background-color: $body-bg;
-}
+ color: $main-color;
+ background-color: $body-bg;
+} 
 
 h1, h2, h3 { color: $heading-color }
+
+.favesHeading {
+
+  text-align: center;  
+
+}
 
 .panel { min-height: 80vh; }
 
 .panel:nth-child(odd) {
-    background-color: salmon;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
