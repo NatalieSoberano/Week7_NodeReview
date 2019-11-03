@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
 
-    let query = "SELECT ID, avatar, Name, Logo, JobTitle FROM tbl_card";
+    let query = "SELECT ID, avatar, Name FROM tbl_card";
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
@@ -24,7 +24,7 @@ router.get('/:id', (req, res) => {
     console.log('at user route');
     console.log(req.params.id) // 1, 2 or 3 or whatever comes after the slash in the browser search line
 
-    let query = `SELECT * FROM tbl_bio WHERE profID="${req.params.id}"`;
+    let query = `SELECT * FROM tbl_bio WHERE FaveID="${req.params.id}"`;
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
