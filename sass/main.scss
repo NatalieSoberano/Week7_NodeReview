@@ -10,6 +10,12 @@ body {
 
 h1, h2, h3 { color: $heading-color }
 
+.favesHeading {
+
+  text-align: center;  
+
+}
+
 .panel { min-height: 80vh; }
 
 .panel:nth-child(odd) {
