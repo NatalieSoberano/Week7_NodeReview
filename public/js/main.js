@@ -4,20 +4,14 @@ const myVM = (() => {
     // get the user buttons and fire off an async DB query with Fetch
     let userButton = document.querySelectorAll('.u-link'), 
         lightbox = document.querySelector('.lightbox');
-    
-    function renderdescription(socialMedia) {
-        return `<ul class="u-social">
-            ${socialMedia.map(item => `<li>${item}</li>}`).join('')}
-        </ul>`
-    }
 
     function parseUserData(person) { // grabbing user or data is what is targeted in the brackets
         let targetDiv = document.querySelector('.lb-content'),
             targetImg = lightbox.querySelector('img');
 
         let bioContent = `
-            <p>${person.bio}</p>
-            ${renderdescription(person.social)}
+            <p>${person.Heading}</p>
+            <p>${person.description}</p>
         `;
 
         console.log(bioContent);

@@ -3,7 +3,7 @@ const router = express.Router();
 
 const sql = require('../utils/sql');
 
-router.get('/users/:id', (req, res) => {
+router.get('/', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
 
@@ -19,7 +19,7 @@ router.get('/users/:id', (req, res) => {
     })
 })
 
-router.get('/:id', (req, res) => {
+router.get('/users/:id', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at user route');
     console.log(req.params.id) // 1, 2 or 3 or whatever comes after the slash in the browser search line
