@@ -3,7 +3,7 @@ const router = express.Router();
 
 const sql = require('../utils/sql');
 
-router.get('/', (req, res) => {
+router.get('/users/:id', (req, res) => {
     // should really get the user data here and then fetch it thru, but let's try this asynchronously
     console.log('at the main route');
 
@@ -33,11 +33,11 @@ router.get('/:id', (req, res) => {
 
         // turn our social property into an array - its just text in the DB, 
         // which really isnt anything we can work with - so spliting it into an array so we can target it 
-        result[0].social = result[0].social.split(",").map(function(item) {
-            item = item.trim(); // remove the extra spaces from each word 
+        // result[0].social = result[0].social.split(",").map(function(item) {
+        //     item = item.trim(); // remove the extra spaces from each word 
 
-            return item; 
-        });
+        //     return item; 
+        // });
 
         // console.log('after split:', result[0]);
 
