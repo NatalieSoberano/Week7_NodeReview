@@ -2,13 +2,16 @@
 @import 'modules/_navbar';
 @import 'modules/_users';
 @import 'modules/_lightbox';
+@import 'modules/_errors';
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 
 body {
  color: $main-color;
  background-color: $body-bg;
 } 
 
-h1, h2, h3 { color: $heading-color; font-family: $fontfamily1;}
+h1 { font-family: 'Montserrat', sans-serif;}
+h1, h2, h3 { color: $heading-color;}
 
 .favesHeading {
 
