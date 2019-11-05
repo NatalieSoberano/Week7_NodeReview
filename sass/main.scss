@@ -10,22 +10,39 @@ body {
  background-color: $body-bg;
 } 
 
-h1 { font-family: 'Montserrat', sans-serif;}
-h1, h2, h3 { color: $heading-color;}
-
 .favesHeading {
-
   text-align: center;
+  font-family: $font-family1;
+  text-transform: uppercase;
+  font-size: 40px;
+}
 
+h1, h2, h3, h4 {
+  text-align: center;
+  font-family: $font-family2;
+  color:white;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+h4{
+  text-transform: uppercase;
+}
+
+.u-link {
+  width: 300px;
+  border-radius: 30px;
+  background-color: white;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.team .user-panel .u-avatar {
+    max-width: 700px;
+    min-width: 300px;
 }
 
 .panel { min-height: 80vh; }
 
-.panel:nth-child(odd) {
-    background-color: white;
-    color: black;
-}
-
 #to-top { position: fixed; bottom: 10px; right: 10px; display: none; }
 
-@import 'modules/_footer'

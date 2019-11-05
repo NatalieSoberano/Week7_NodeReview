@@ -3,7 +3,23 @@ body {
     color: #000226;
 }
 
+h3 {
+    display: none;
+}
+
+.errorimg {
+    position: absolute;
+    margin-left: 350px;
+    text-align: center;
+    margin-top: 15px;;
+}
+
+
 .error-section a, .error-home {
     color: white;
     text-decoration:none;
+    display: block;
+    text-align: center;
+    font-family: $font-family2;
+    text-transform: uppercase;
 }

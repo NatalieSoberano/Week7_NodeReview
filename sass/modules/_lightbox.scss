@@ -19,20 +19,42 @@
         flex: 3;
     }
 
-    img { max-width: 250px; }
+    img { 
+        max-width: 400px;
+        margin-top: 55px;
+        padding-top: 20px;
+     }
 
     .close {    
         right: 24px;
-        top: 10px;
+        top: 20px;
         cursor: pointer;
         font-size: 2em;
         position: fixed;
         border: thin solid white;
         padding: 2px 14px 5px;
         border-radius: 50%;
-        background-color: rgba(255,255,255,0.25);
+        background-color:black;
     }
 }
+
+p {
+    text-align: center;
+    font-family: $font-family2;
+    color:white;
+    padding-top: 5px;
+    width: 750px;
+    padding-left: 20px;
+    line-height: 35px;
+  }
+
+  .lightbox p:first-of-type {
+    font-family: $font-family1;
+    text-transform: uppercase;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-size: 40px;
+  }
 
 .show-lb { display: flex !important; }
 
