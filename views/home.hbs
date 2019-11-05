@@ -3,17 +3,17 @@
         Welcome to our awesome team section!
     </h1> --->
 
-    <h4>Click below to learn more about my favourite things.</h4>
+    <h4>Click below to learn about some things I love.</h4>
 
     <div class="team">
         <!-- loop through all our team members and put their info on the page -->
         {{#each people}} <!-- this is like a JS forEach loop -->
         <div class="user-panel">
+           <h1>{{Name}}</h1>
            <img src="images/{{avatar}}" alt="user image" class="u-avatar">
            <a href="{{ID}}" class="u-link">
                Tell Me More
            </a>
-           <h1>{{Name}}</h1>
            <h3>{{description}}</h3>
         </div>
         {{/each}} <!-- this is terminating the loop --> 
